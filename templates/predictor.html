@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+<title>Stock Market Prediction</title>
+	<link href="{% static 'bootstrap/img/favicon.ico' %}" rel="shortcut icon"/>
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+
+	<!-- Stylesheets -->
+	<!--<link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}"/>-->
+    <link rel="stylesheet" href="{% static 'bootstrap/css/font-awesome.min.css' %}"/>
+	<link rel="stylesheet" href="{% static 'bootstrap/css/flaticon.css' %}"/>
+	<link rel="stylesheet" href="{% static 'bootstrap/css/animate.css' %}"/>
+	<link rel="stylesheet" href="{% static 'bootstrap/css/owl.carousel.css' %}"/>
+	<link rel="stylesheet" href="{% static 'bootstrap/css/style.css' %}"/>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<!-- Header section start -->
+	<header class="header-section sp-pad" style="color: white; background-color: black; margin-bottom: 100px;">
+		<h3 class="site-logo">StockHub</h3>
+		<form class="search-top">
+			<button class="se-btn"><i class="fa fa-search"></i></button>
+			<input type="text" placeholder="Search.....">
+		</form>
+		<div class="nav-switch">
+			<i class="fa fa-bars"></i>
+		</div>
+		<nav class="main-menu">
+			<ul>
+		    <li><a href="{% url 'home' %}">Home</a></li>
+	      	<li><a href="{% url 'advise' %}">Advisors</a></li>
+		  	<li><a href="{% url 'about' %}">About</a></li>
+			<li><a href="{% url 'predict' %}">Predictor</a></li>
+		  	<li><a href="lastprice.html">Charts</a></li>
+		  	<li><a href="{% url 'contact' %}">Contacts</a></li>
+				<li><a href="{% url 'details' %}">Details</a></li>
+				<li><a href="login.html">Login</a></li>
+			<li><a href="{% url 'add' %} ">SignUP</a></li>
+			</ul>
+		</nav>
+	</header>
+	 <!--Header section end-->
+
+<!--<h1>this is our registration page</h1>-->
+<div class="row" style="background-color: #1f1b1b; margin-top: 100px;">
+
+  <br><br><br>
+
+  <center>
+  	<h1 style="color: white;">Price Predictor</h1>
+  	<br><br>
+  	<input type="text" name="" placeholder="TRADING CODE" style="padding: 10px;color: black;">
+  	<input type="text" name="" placeholder="DATE" style="padding: 10px;color: black;">
+  	<br><br>
+  	<a href="predict.html"><button type="submit" class="btn btn-success">Predict</button></a>
+  </center>
+
+
+
+</div>
+
+	<!-- Footer section start -->
+	<footer class="footer-section spad">
+		<div class="container text-center">
+			<h2>Let’s work together!</h2>
+			<p>office@template.com</p>
+			<div class="social">
+				<a href="#"><i class="fa fa-pinterest"></i></a>
+				<a href="#"><i class="fa fa-facebook"></i></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="#"><i class="fa fa-dribbble"></i></a></br>
+
+</br>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+
+
+			</div>
+		</div>
+	</footer>
+	<!-- Footer section end -->
+
+
+	<!--====== Javascripts & Jquery ======-->
+	<script src="{% static 'bootstrap/js/jquery-3.2.1.min.js' %}"></script>
+	<script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+	<script src="{% static 'bootstrap/js/owl.carousel.min.js' %}"></script>
+	<script src="{% static 'bootstrap/js/mixitup.min.js' %}"></script>
+	<script src="{% static 'bootstrap/js/circle-progress.min.js' %}"></script>
+	<script src="{% static 'bootstrap/js/main.js' %}"></script>
+
+</body>
+</html>
+

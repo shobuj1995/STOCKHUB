@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+<title>Stock Market Prediction</title>
+	<link href="{% static 'bootstrap/img/favicon.ico' %}" rel="shortcut icon"/>
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+
+	<!-- Stylesheets -->
+	<!--<link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}"/>-->
+    <link rel="stylesheet" href="{% static 'bootstrap/css/font-awesome.min.css' %}"/>
+	<link rel="stylesheet" href="{% static 'bootstrap/css/flaticon.css' %}"/>
+	<link rel="stylesheet" href="{% static 'bootstrap/css/animate.css' %}"/>
+	<link rel="stylesheet" href="{% static 'bootstrap/css/owl.carousel.css' %}"/>
+	<link rel="stylesheet" href="{% static 'bootstrap/css/style.css' %}"/>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+	<!-- Header section start -->
+	<header class="header-section sp-pad">
+		<h3 class="site-logo">StockHub</h3>
+		<form class="search-top">
+			<button class="se-btn"><i class="fa fa-search"></i></button>
+			<input type="text" placeholder="Search.....">
+		</form>
+		<div class="nav-switch">
+			<i class="fa fa-bars"></i>
+		</div>
+		<nav class="main-menu">
+			<ul>
+		    <li><a href="{% url 'home' %}">Home</a></li>
+	      	<li><a href="{% url 'advise' %}">Advisors</a></li>
+		  	<li><a href="{% url 'about' %}">About</a></li>
+			<li><a href="{% url 'predict' %}">Predictor</a></li>
+		  	<li><a href="lastprice.html">Charts</a></li>
+		  	<li><a href="{% url 'contact' %}">Contacts</a></li>
+				<li><a href="{% url 'details' %}">Details</a></li>
+				<li><a href="{% url 'login' %}">Login</a></li>
+			<li><a href="{% url 'add' %} ">SignUP</a></li>
+			</ul>
+		</nav>
+	</header>
+	 <!--Header section end-->
+
+
+	<!-- Page top section start -->
+	<div class="page-top-area set-bg" data-setbg="{% static 'bootstrap/img/headers-bg/1.jpg' %}">
+		<!-- <div class="breadcrumb-area">
+			<a href="#">Home</a> / <span>About us</span>
+		</div> -->
+	</div>
+	<!-- Page top section end -->
+
+<div class="row"  style="background-color: black; height: 400px;">
+
+  <br><br><br>
+
+  <center>
+  	<h1 style="color:white;">Stock Hub</h1>
+  	<br><br>
+  	<h4 style="color:white;">Use 'Machine Learning' to predict stock prices</h4>
+  	<br><br>
+  <a href="{% url 'add' %}"><button type="submit" class="btn btn-success">SIGN UP</button></a>
+
+  <a href= "{% url 'learn' %}"><button type="submit" class="btn btn-primary" style="margin-left: 2%;">Learn More</button></a>
+  </center>
+
+
+</div>
+<section class="single-work-section sp-pad spad">
+		<div class="container-fluid p-0">
+			<div class="work-slider owl-carousel">
+				<div class="ws-item set-bg" data-setbg="{% static 'bootstrap/img/work-slider/3.jpg' %}"></div>
+				<div class="ws-item set-bg" data-setbg="{% static 'bootstrap/img/work-slider/4.jpg' %}"></div>
+				<div class="ws-item set-bg" data-setbg="{% static 'bootstrap/img/work-slider/5.jpg' %}"></div>
+			</div>
+			<div class="row">
+				<div class="col-xl-5">
+					<ul class="work-info-list">
+						<li>
+							<span>Designed by:</span>
+							<h4 style="color:white;">SUST CSE</h4>
+						</li>
+						<li>
+							<span>category:</span>
+							<h4>Studio photography</h4>
+						</li>
+						<li>
+							<span>Project timeline:</span>
+							<h4>3 months</h4>
+						</li>
+						<li>
+							<span>tags:</span>
+							<h4>product, photography</h4>
+						</li>
+					</ul>
+				</div>
+				<div class="col-xl-6 offset-xl-1">
+					<!-- <span class="sp-sub-title">Amazing studio</span> -->
+					<h3 class="sp-title">We are so Creative</h3>
+					<p>Integer nec bibendum lacus. Suspendisse dictum enim sit amet libero malesuada feugiat. Praesent malesuada congue magna at finibus. In hac habitasse platea dictumst. Curabitur rhoncus auctor eleifend. Fusce venenatis diam urna, eu pharetra arcu varius ac. Etiam cursus turpis lectus, id iaculis risus tempor id. Integer nec bibendum lacus. Suspendisse dictum enim sit amet libero malesuada feugiat. Praesent malesuada congue magna at finibus. In hac habitasse platea dictumst. Curabitur rhoncus auctor eleifend. Fusce venenatis diam urna, eu pharetra arcu varius ac. Etiam cursus turpis lectus, id iaculis risus tempor id.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+<br><br>
+	<!-- Footer section start -->
+	<footer class="footer-section spad">
+		<div class="container text-center">
+			<h2>Let’s work together!</h2>
+			<p>office@template.com</p>
+			<div class="social">
+				<a href="#"><i class="fa fa-pinterest"></i></a>
+				<a href="#"><i class="fa fa-facebook"></i></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="#"><i class="fa fa-dribbble"></i></a></br>
+
+</br>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+
+
+			</div>
+		</div>
+	</footer>
+	<!-- Footer section end -->
+
+
+	<!--====== Javascripts & Jquery ======-->
+	<script src="{% static 'bootstrap/js/jquery-3.2.1.min.js' %}"></script>
+	<script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+	<script src="{% static 'bootstrap/js/owl.carousel.min.js' %}"></script>
+	<script src="{% static 'bootstrap/js/mixitup.min.js' %}"></script>
+	<script src="{% static 'bootstrap/js/circle-progress.min.js' %}"></script>
+	<script src="{% static 'bootstrap/js/main.js' %}"></script>
+
+</body>
+</html>

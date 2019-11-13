@@ -1,0 +1,101 @@
+{% extends 'MovieReview/layout.html' %}
+
+{% load staticfiles %}
+
+	{% block css %}
+	
+	<title>Login Ybazaar</title>
+
+
+	{% endblock %}
+	
+{% block content %}	
+
+
+<!------ Include the above in your HEAD tag ---------->
+
+
+<html>
+  <head>
+
+  
+
+<!------ Include the above in your HEAD tag ---------->
+  </head>
+<body id="LoginForm">
+<div class="container">
+<h1 class="form-heading">Stock price Analysis login </h1>
+<div class="login-form">
+<div class="main-div">
+    <div class="panel">
+
+   <p style="font-size:20px">Please enter your email and password</p>
+   </div>
+   <p><center style="font-size:20px; color: red">{{ form.non_field_errors }}</center></p>
+   
+    <form id="Login" method='POST' action="{% url 'login' %}">
+		{% csrf_token %}
+        <div class="form-group">
+
+			{{form.email}}
+            
+
+        </div>
+
+        <div class="form-group">
+
+            {{form.password}}
+
+        </div>
+        <div class="forgot">
+        <a href="reset.html">Forgot password?</a>
+</div>
+</br>
+        <button type="submit" class="btn btn-primary">Login</button>
+
+    </form>
+    </div>
+</div></div></div>
+
+
+</body>
+</html>
+
+
+
+
+
+{% endblock %}
+
+
+		{% block js %}
+		
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		{% endblock %}
+		
+		
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+		
